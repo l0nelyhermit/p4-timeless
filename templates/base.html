@@ -1,5 +1,5 @@
- {% load static %}
 <!doctype html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
 
     <title>{% block title %} Watch | Where time pauses while you are browsing {% endblock %}</title>
 </head>
@@ -20,8 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href=""><img
-                    src="{% static 'media/watch-logo.jpeg' %}" alt="watch logo"></a>
+            <a class="navbar-brand" href=""><img src="{% static 'media/watch-logo.jpeg' %}" alt="watch logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,12 +35,9 @@
                             SHOP
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item"
-                                    href="">ROLEX</a></li>
-                            <li><a class="dropdown-item"
-                                    href="">BULOVA</a></li>
-                            <li><a class="dropdown-item"
-                                    href="">OMEGA</a></li>
+                            <li><a class="dropdown-item" href="">ROLEX</a></li>
+                            <li><a class="dropdown-item" href="">BULOVA</a></li>
+                            <li><a class="dropdown-item" href="">OMEGA</a></li>
                         </ul>
                     </li>
                     <!-- SELL WATCH - CRUD MENU -->
